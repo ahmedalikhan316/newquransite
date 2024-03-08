@@ -113,7 +113,12 @@
 
   @media screen and (min-width:820px) {
    .intro-area {
-    height :75vh;
+    height :60vh;
+}
+  }
+  @media screen and (max-width:680px) {
+   .intro-area {
+    height :20vh;
 }
   }
   .intro-area h2 {
