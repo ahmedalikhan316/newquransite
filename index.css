@@ -78,6 +78,7 @@
     width: 28px;
     height: 3px;
     background-color: #fff;
+    
     display: block;
     transition: .3s;
   }
@@ -147,10 +148,11 @@
     }
     .site-navbar ul {
       position: absolute;
+      z-index: 3;
       width: 100%;
       height: calc(100vh - 60px);
       left: 0;
-      top: 60px;
+      top: 120px;
       flex-direction: column;
       align-items: center;
       border-top: 1px solid #444;
@@ -532,4 +534,140 @@ footer .social-icon li i:hover {
     opacity: 1;
     visibility: visible;
   }
+  /* hero section */
+  .hero>.container{
+    width: 100%;
+    height: 100%;
+  }
+ 
+/* hero section animation and text */
+
+.carousel-caption{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   
+
+}
+.carousel-caption h1{
+  font-size: 3rem;
+  color: #0c5953;
+  font-weight: 800;
+
+}
+.carousel-caption p{
+  font-size: 1.5rem;
+  color: #eda845;
+  font-weight: 700;
+  
+}
+.carousel-caption button{
+  width: 150px;
+  height: 60px;
+  border-radius: 25px;
+  border: 0px;
+  background-color: #0c5953;
+  color: white;
+  
+}
+.carousel-caption button:hover{
+  background-color: #eda845;;
+}
+@media screen and (max-width:880px) {
+  .carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  
+  }
+  .carousel-caption h1{
+    font-size: 2rem;
+    color: #0c5953;
+    font-weight: 800;
+  
+  }
+  .carousel-caption p{
+    font-size: 1.25rem;
+    color: #eda845;
+    font-weight: 600;
+    
+  }
+  /* .carousel-caption button{
+    width: 1.5rem;
+    height: 0.75rem;
+    border-radius: 1rem;
+    border: 0px;
+    background-color: #0c5953;
+    color: white;
+    
+  } */
+}
+
+@media screen and (max-width:750px) {
+  .carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  
+  }
+  .carousel-caption h1{
+    font-size: 1.5rem;
+    color: #0c5953;
+    font-weight: 800;
+  
+  }
+  .carousel-caption p{
+    font-size: 1rem;
+    color: #eda845;
+    font-weight: 600;
+    
+  }
+}
+@media screen and (max-width:590px) {
+  .carousel-caption{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+  
+  }
+  .carousel-caption h1{
+    font-size: 1rem;
+    color: #0c5953;
+    font-weight: 800;
+  
+  }
+  .carousel-caption p{
+    font-size: 0.75rem;
+    color: #eda845;
+    font-weight: 600;
+    
+  }
+}
+@media screen and (max-width:400px) {
+  .carousel-caption{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+  
+  }
+  .carousel-caption h1{
+    font-size: 1rem;
+    color: #0c5953;
+    font-weight: 800;
+  
+  }
+  .carousel-caption p{
+    font-size: 0.75rem;
+    color: #eda845;
+    font-weight: 600;
+    
+  }
+  .carousel-caption button{
+  width: 120px;
+  height: 50px;
+  border-radius: 20px;
+  border: 0px;
+  background-color: #0c5953;
+  color: white;
+}
+}

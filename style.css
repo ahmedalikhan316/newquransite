@@ -1,6 +1,6 @@
 :root {
-    --title-color:#bc0024 ;
-    --new-color : #bc0024;
+    --title-color:#0c5953 ;
+    --new-color : #0c5953;
     --body-color: #4b4c4b;
     --secondary-color: rgb(280, 40, 40);
     --smoke-color: #f8f8f8;
@@ -8308,8 +8308,8 @@ blockquote cite:before {
 .service-container .scard .imgBx {
     position: absolute;
     top: 20px;
-    width: 300px;
-    height: 220px;
+    width: 320px;
+    height: 250px;
     background: #333;
     border-radius: 12px;
     overflow: hidden;
@@ -8867,7 +8867,7 @@ h5.mb-3 {
 }
 .text-primary.mb-3{
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-danger-rgb),var(--bs-text-opacity))!important;
+    color: #0c5953 !important;
     font-weight: bold;
 }
 .footer-widget p, .footer-widget .thumb-post a{
