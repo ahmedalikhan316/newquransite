@@ -1,3 +1,6 @@
+
+
+
     document.addEventListener("DOMContentLoaded", function() {
         // Function to check if an element is in the viewport
         function isInViewport(element) {
@@ -15,8 +18,9 @@
             var scrollAnimations = document.querySelectorAll('.scroll-animation');
             scrollAnimations.forEach(function(scrollAnimation) {
                 if (isInViewport(scrollAnimation)) {
-                    var animationClass = scrollAnimation.getAttribute('data-animation'); // Get animation class from data attribute
-                    scrollAnimation.classList.add('animate__animated', 'animate__' + animationClass); // Add animation class
+                    var animationClass = scrollAnimation.getAttribute('data-animation');
+                    scrollAnimation.classList.remove('animate__opacity-0'); // Remove the opacity-0 class to reveal the image
+                    scrollAnimation.classList.add('animate__' + animationClass);
                 }
             });
         }

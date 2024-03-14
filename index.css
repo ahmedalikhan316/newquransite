@@ -37,6 +37,12 @@
     justify-content: space-between;
     align-items: center;
   }
+  @media screen and (min-width:980px){
+    .site-navbar ul li{
+      margin-left: 2.5rem;
+    }
+  }
+  
   a.site-logo {
     font-size: 26px;
     font-weight: 800;
@@ -343,7 +349,7 @@ footer .social-icon li i:hover {
     background-color: #25d366;
     bottom: 20px;
     right: 20px;
-    border-radius: 50px;
+    border-radius: 0px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
     z-index: 20;
     overflow: hidden;
@@ -670,4 +676,57 @@ footer .social-icon li i:hover {
   background-color: #0c5953;
   color: white;
 }
+.carousel-caption .vs-btn {
+  display: inline-block;
+  position: relative;
+  border: none;
+  background-color: rgb(242, 179, 5);
+  color: var(--white-color);
+  padding: 11.5px 20px;
+  font-weight: 700;
+  line-height: 0.5;
+  border-radius: 9999px;
+  font-size: 16px;
+  z-index: 1;
+  margin-right: 12.5px;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+}
+@media screen and (max-width:350px) {
+  .carousel-caption{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+  
+  }
+  .carousel-caption h1{
+    font-size: 0.75rem;
+    color: #0c5953;
+    font-weight: 800;
+  
+  }
+  .carousel-caption p{
+    font-size: 0.50rem;
+    color: #eda845;
+    font-weight: 600;
+    
+  }
+  .carousel-caption .vs-btn {
+    display: inline-block;
+    position: relative;
+    border: none;
+    background-color: rgb(242, 179, 5);
+    color: var(--white-color);
+    padding: 11.5px 20px;
+    font-weight: 700;
+    line-height: 1;
+    border-radius: 9999px;
+    font-size: 16px;
+    z-index: 1;
+    margin-right: 12.5px;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+  }
+ 
 }
