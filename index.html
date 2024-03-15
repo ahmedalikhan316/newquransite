@@ -427,7 +427,7 @@ You or your kids will learn verbs and make perfect sentences with no grammar mis
 
   <div class="sticky-button animate__animated animate__slideOutUp"
     style="animation-delay: 4s; animation-duration: 2s; animation-iteration-count:infinite;" id="sticky-button">
-    <a href="https://web.whatsapp.com/send?phone=+923485725006"><img src="assets/images/Icons/whatsapp.png" alt=""></a>
+    <a  onclick="openWhatsApp()"><img src="assets/images/Icons/whatsapp.png" alt=""></a>
   </div>
 
   <!-- end of whatsaap icon -->
@@ -713,6 +713,15 @@ You or your kids will learn verbs and make perfect sentences with no grammar mis
         </div>
       </div>
     </div>
+    <script>
+      function openWhatsApp() {
+    var phoneNumber = "+92323884879"; // Dummy phone number
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    var url = isMobile ? 'whatsapp://send?phone=+92323884879' : 'https://web.whatsapp.com/send?phone=+92323884879';
+    url += phoneNumber;
+    window.open(url, '_blank');
+}
+      </script>
   </footer>
 
   <script src="navbar.js"></script>
