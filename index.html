@@ -29,8 +29,15 @@
 }
 
 .carousel-item img {
-    max-height: 100% !important; /* Ensure images fit within the carousel height */
+    max-height: 80vh !important; /* Ensure images fit within the carousel height */
+    width: 100% !important; /* Ensure images maintain aspect ratio */
+}
+@media screen and (max-width : 500px) {
+  .carousel-item img {
+    height: 40vh!important; /* Ensure images fit within the carousel height */
     width: auto !important; /* Ensure images maintain aspect ratio */
+}
+  
 }
 </style>
 </head>
@@ -42,7 +49,7 @@
       <div class="container">
         <nav class="site-navbar">
           <!-- site logo -->
-          <a href="#home" class="site-logo"> <img src="./assets/images/logo in white.png" alt="" height="200px"
+          <a href="#home" class="site-logo"> <img src="./assets/images/logo for web in all white.png" alt="" height="200px"
               width="260px"> </a>
 
           <!-- site menu/nav -->
@@ -75,22 +82,22 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100 imgsize" src="newquranimg.jpg" alt="First slide" height="80%" />
+          <img class="d-block w-100 " src="assets/images/hero section design 1.png" alt="First slide" height="80%" />
           <div class="carousel-caption ">
             <h1 class="animate__animated animate__backInDown">Learn Quran with Sirat ul Quran</h1>
             <p class="animate__animated  animate__backInLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Eos, illum.</p>
-            <a href="tel:+923485725006" class="vs-btn mt-1  animate__animated   animate__backInUp">Register Now</a>
+            <a onclick="openWhatsApp()" class="vs-btn mt-1  animate__animated   animate__backInUp">Register Now</a>
           </div>
 
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" >
           <img class="d-block w-100" src="assets/images/hero section design 1.png" alt="Second slide" />
           <div class="carousel-caption ">
             <h1 class="animate__animated animate__backInDown">Learn Quran with Sirat ul Quran</h1>
             <p class="animate__animated  animate__backInLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Tempora, aspernatur.</p>
-            <a href="tel:+923485725006" class="vs-btn mt-1  animate__animated   animate__backInUp">Register Now</a>
+            <a onclick="openWhatsApp()" class="vs-btn mt-1  animate__animated   animate__backInUp">Register Now</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -99,7 +106,7 @@
             <h1 class="animate__animated animate__backInDown">Learn Quran with Sirat ul Quran</h1>
             <p class="animate__animated  animate__backInLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Quas, nemo.</p>
-            <a href="tel:+923485725006" class="vs-btn mt-1  animate__animated   animate__backInUp">Register Now</a>
+            <a onclick="openWhatsApp()" class="vs-btn mt-1  animate__animated   animate__backInUp">Register Now</a>
           </div>
         </div>
       </div>
@@ -112,9 +119,9 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </Section> -->
+  </Section> 
   <!-- Hero section
-    <!-- <section class="hero " style="height: 80vh; width: 100%; background-image:url(assets/images/hero\ section\ design\ 1.png);">
+    <section class="hero " style="height: 80vh; width: 100%; background-image:url(assets/images/hero\ section\ design\ 1.png);">
       <div class="container d-flex align-items-center">
         <div class="row " >
           <div class="col-lg-4 col-md-6 col-sm-12 offset-md-2 align-self-start">
@@ -161,14 +168,14 @@
                 teachings of the Quran. Welcome to a place where spirituality thrives, welcome to Sirat ul Quran online
                 institute.
               </p>
-              <a href="tel:+923485725006" class="vs-btn mt-1">Contact Us</a>
+              <a onclick="openWhatsApp()" class="vs-btn mt-1">Contact Us</a>
             </div>
           </div>
         </div>
       </div>
     </section>
   </section>
-  <div class="row d-flex justify-content-center mt-5">
+  <div class="row d-flex justify-content-center mt-5" >
     <div class="col-md-10 col-xl-8 text-center">
       <div class="row text-center justify-content-center">
         <div class="col-md-11 col-lg-9 col-xl-7">
@@ -187,7 +194,7 @@
         <div class="service-container">
           <div class="scard" style="--clr: #009688" data-aos="flip-left" data-aos-delay="200" data-aos-duration="400">
             <div class="imgBx">
-              <img src="./assets/images/quran-e-pak.jpg" alt="Mobile tyre fitting" />
+              <img src="./assets/images/learn quran for kids.png" alt="Mobile tyre fitting" />
             </div>
             <div class="scontent">
               <h2>Learn Quran for kids</h2>
@@ -206,7 +213,7 @@
         <div class="service-container">
           <div class="scard" style="--clr: #009688" data-aos="flip-right" data-aos-delay="300" data-aos-duration="600">
             <div class="imgBx">
-              <img src="./assets/images/quran-e-pak.jpg" alt="Mobile tyre repair" />
+              <img src="./assets/images/Quran Recitation with Tajweed.png" alt="Mobile tyre repair" />
             </div>
             <div class="scontent">
               <h2>Quran recitation with Tajweed</h2>
@@ -225,7 +232,7 @@
         <div class="service-container">
           <div class="scard" style="--clr: #009688" data-aos="flip-left" data-aos-delay="400" data-aos-duration="600">
             <div class="imgBx">
-              <img src="./assets/images/quran-e-pak.jpg" alt="Tyre burst" />
+              <img src="./assets/images/Quran Memorization.png" alt="Tyre burst" />
             </div>
             <div class="scontent">
               <h2>Quran Memorisation</h2>
@@ -244,7 +251,7 @@
         <div class="service-container">
           <div class="scard" style="--clr: #009688" data-aos="flip-left" data-aos-delay="300" data-aos-duration="600">
             <div class="imgBx">
-              <img class="image-fluid" src="./assets/images/quran-e-pak.jpg" alt="Flat tyre" />
+              <img class="image-fluid" src="./assets/images/Tafseer & Translation.png" alt="Flat tyre" />
             </div>
             <div class="scontent">
               <h2>Tafseer & Translation</h2>
@@ -263,7 +270,7 @@
         <div class="service-container">
           <div class="scard" style="--clr: #009688" data-aos="flip-right" data-aos-delay="400" data-aos-duration="700">
             <div class="imgBx">
-              <img src="./assets/images/quran-e-pak.jpg" alt="Tyre fitting at home " />
+              <img src="./assets/images/learn arabic langauge.png" alt="Tyre fitting at home " />
             </div>
             <div class="scontent">
               <h2>Learn Arabic Language</h2>
@@ -282,7 +289,7 @@ You or your kids will learn verbs and make perfect sentences with no grammar mis
         <div class="service-container">
           <div class="scard" style="--clr: #009688" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1000">
             <div class="imgBx">
-              <img src="./assets/images/quran-e-pak.jpg" alt="Tyre fitting at home " />
+              <img src="./assets/images/Islamic Studies.png" alt="Tyre fitting at home " />
             </div>
             <div class="scontent">
               <h2>Islamic Studies</h2>
@@ -427,7 +434,7 @@ You or your kids will learn verbs and make perfect sentences with no grammar mis
 
   <div class="sticky-button animate__animated animate__slideOutUp"
     style="animation-delay: 4s; animation-duration: 2s; animation-iteration-count:infinite;" id="sticky-button">
-    <a  onclick="openWhatsApp()"><img src="assets/images/Icons/whatsapp.png" alt=""></a>
+    <a  onclick="openWhatsApp()"><img src="assets/images/Icons/whatsapp 2.png" alt=""></a>
   </div>
 
   <!-- end of whatsaap icon -->
@@ -466,7 +473,7 @@ You or your kids will learn verbs and make perfect sentences with no grammar mis
                 Let your spiritual journey begin here!"
 
               </p>
-              <a href="tel:+923485725006" class="vs-btn mt-1">Contact Me</a>
+              <a onclick="openWhatsApp()" class="vs-btn mt-1">Contact Me</a>
             </div>
           </div>
           <div class="col-lg-5 mb-30 order-lg-2 order-1">
@@ -498,7 +505,7 @@ You or your kids will learn verbs and make perfect sentences with no grammar mis
   <!-- Prices Section End -->
 
   <!-- why choose us -->
-  <section>
+  <section >
     <div class="row d-flex justify-content-center mt-5">
       <div class="col-md-10 col-xl-8 text-center">
         <div class="row text-center justify-content-center">
@@ -625,20 +632,20 @@ You or your kids will learn verbs and make perfect sentences with no grammar mis
   </section>
   <!-- why choose us end -->
   <!-- Footer -->
-  <footer>
-    <div class="footer-top">
+  <footer >
+    <div class="footer-top" >
       <div class="container">
         <div class="footer-day-time">
           <div class="row">
             <div class="col-md-8">
               <ul>
-                <li>Opening Hours: Mon - Friday: 8AM - 5PM</li>
-                <li>Sunday: 8:00 AM - 12:00 PM</li>
+                <li>Opening Hours: 24/7</li>
+                <li>Fom Monday to Sunday</li>
               </ul>
             </div>
             <div class="col-lg-4 mt-5">
               <div class="phone-no">
-                <a href="tel:+923238848679"><i class="fa fa-mobile" aria-hidden="true"></i>Call +92 323
+                <a onclick="openWhatsApp()"><img src="assets/images/Icons/phone-call.png" alt="phoneicon" width="45px" height="45px">Call +92 323
                   88 48 79</a>
               </div>
             </div>
@@ -663,7 +670,8 @@ You or your kids will learn verbs and make perfect sentences with no grammar mis
                 Ipsum
               </li>
               <li>
-                <i class="fa fa-envelope"></i><a href="mailto:#">info@test.com</a>
+                <i class="fa fa-envelope"></i><a href="mailto:Infosiratulquran92@gmail.com">
+                  Infosiratulquran92@gmail.com</a>
               </li>
               <li>
                 <i class="fa fa-mobile" aria-hidden="true"></i>
@@ -714,13 +722,14 @@ You or your kids will learn verbs and make perfect sentences with no grammar mis
       </div>
     </div>
     <script>
-      function openWhatsApp() {
-    var phoneNumber = "+92323884879"; // Dummy phone number
+   function openWhatsApp() {
+    var phoneNumber = "+923338615999"; // Corrected phone number
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    var url = isMobile ? 'whatsapp://send?phone=+92238848679' : 'https://web.whatsapp.com/send?phone=+92238848679';
+    var url = isMobile ? 'whatsapp://send?phone=' : 'https://web.whatsapp.com/send?phone=';
     url += phoneNumber;
     window.open(url, '_blank');
 }
+
       </script>
   </footer>
 
