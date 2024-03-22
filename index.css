@@ -58,6 +58,7 @@
   }
   .site-navbar ul li a {
     color: #fff;
+    font-weight: 900 !important;
     padding: 20px;
     display: block;
     text-decoration: none;
