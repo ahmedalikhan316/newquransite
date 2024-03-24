@@ -29,7 +29,7 @@
   
   /* navbar regular css start */
   .navbar-area {
-    background: #eda845;
+    background: white;
     border-bottom: 1px solid #000;
   }
   .site-navbar {
@@ -57,7 +57,7 @@
     display: flex;
   }
   .site-navbar ul li a {
-    color: #fff;
+    
     font-weight: 900 !important;
     padding: 20px;
     display: block;
@@ -65,7 +65,8 @@
     text-transform: uppercase;
   }
   .site-navbar ul li a:hover {
-    background: rgba(255,255,255,.1);
+    background: rgba(255,255,255,.9) !important;
+    font-weight: 900;
   }
   /* navbar regular css end */
   
@@ -75,6 +76,7 @@
     border: 3px solid #fff;
     padding: 5px;
     background-color: transparent;
+    
     cursor: pointer;
     height: 39px;
     display: none;
@@ -84,11 +86,16 @@
   .nav-toggler span:after {
     width: 28px;
     height: 3px;
-    background-color: #fff;
+    background-color:black;
     
     display: block;
     transition: .3s;
   }
+  @media screen and (max-width: 767px){
+.site-navbar ul li a {
+    color: white;
+}
+}
   .nav-toggler span:before {
     content: '';
     transform: translateY(-9px);
@@ -560,13 +567,11 @@ footer .social-icon li i:hover {
   font-size: 3rem;
   color: #0c5953;
   font-weight: 800;
-
 }
 .carousel-caption p{
   font-size: 1.5rem;
   color: #eda845;
   font-weight: 700;
-  
 }
 .carousel-caption button{
   width: 150px;
