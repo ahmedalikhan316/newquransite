@@ -81,7 +81,7 @@ object,
 video {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+
 }
 
 ul {
@@ -8232,7 +8232,7 @@ blockquote cite:before {
 }
 .space,
 .space-bottom {
-    padding-bottom: 150px;
+    padding-bottom: 40px;
 }
 
 .space-md,
@@ -8254,7 +8254,7 @@ blockquote cite:before {
 
     .space,
     .space-bottom {
-        padding-bottom: 80px;
+        padding-bottom: 30px;
     }
 
     .space-md,
